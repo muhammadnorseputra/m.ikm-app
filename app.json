@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "ikmApp",
+    "slug": "ikmApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "ikmApp"
+}
