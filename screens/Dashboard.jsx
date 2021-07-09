@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, RefreshControl, ScrollView, SafeAreaView } from 'react-native';
 import axios from 'axios';
-import { ThemeProvider, Divider, Button, Avatar} from 'react-native-elements'
+import { ThemeProvider, Icon, Divider, Button, Avatar} from 'react-native-elements'
 
 
 function CardBox (props) {
@@ -93,9 +93,9 @@ return (
             />
             </View>
             <View>
-                <Text style={{fontSize: 18, fontWeight: 'bold', color: '#000'}}>IKM (Indeks Kepuasan Masyarakat)</Text>
-                <Text style={{fontSize: 18, fontWeight: 'bold', color: '#444'}}>BKPPD BALANGAN</Text>
-                <Text style={{fontSize: 14, fontWeight: 'bold', color: '#2541B2', marginTop: 5}}>Dashboard</Text>
+                <Text style={{fontFamily: 'Poppins-Bold', fontSize: 18, fontWeight: 'bold', color: '#000'}}>IKM (Indeks Kepuasan Masyarakat)</Text>
+                <Text style={{fontFamily: 'Poppins-Bold', fontSize: 18, fontWeight: 'bold', color: '#444'}}>BKPPD BALANGAN</Text>
+                <Text style={{fontFamily: 'Poppins-Bold', fontSize: 14, fontWeight: 'bold', color: '#2541B2', marginTop: 5}}>Dashboard</Text>
             </View>
         </View>
      </View>
@@ -116,7 +116,7 @@ return (
          load={isLoading}
          title="Responden" 
          bgColor="#fff" 
-         iconBox="R" 
+         iconBox={<Icon size={30} name='users' type='font-awesome' color='#78DEC7'/>} 
          value={arr.jml_responden} />
         </View>
 
@@ -136,13 +136,13 @@ return (
          load={isLoading} 
          title="Jumlah Layanan" 
          bgColor="#fff" 
-         iconBox="L" 
+         iconBox={<Icon name='industry' type='font-awesome' color='#2F5D62'/>} 
          value={arr.jml_layanan} />
          <CardBox
          load={isLoading} 
          title="Jumlah Indikator" 
          bgColor="#fff" 
-        //  iconBox={}  
+         iconBox={<Icon name='bookmark' type='font-awesome' color='#D83A56'/>}  
          value={arr.jml_indikator} />
         </View>
         
@@ -193,9 +193,11 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 15,
         marginTop: 5,
+        fontFamily: 'Poppins-Bold',
     },
     subTitle: {
         fontSize: 50,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontFamily: 'Poppins-Reguler',
     }
 });

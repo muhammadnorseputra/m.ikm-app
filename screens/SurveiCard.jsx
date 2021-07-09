@@ -6,17 +6,15 @@ export default function SurveiCard() {
  return (
      <View style={styles.container}>
          <Card style={{width: '100%'}}>
-            <Card.Title style={{fontSize: 120}}>
-                <Icon
-                    name='archive-outline'
-                    type='ionicon'
+            <Card.Title>
+                <Icon name='users'
+                    type='font-awesome'
                     color='#517fa4'
-                    size='80'
                     />
             </Card.Title>
             <Card.Divider/>
             {/* <Card.Image source={require('../images/pic2.jpg')}> */}
-                <Text style={{marginBottom: 10, fontSize: 20, fontWeight: 'bold', align: 'center'}}>
+                <Text style={{marginBottom: 10, fontSize: 20, fontWeight: 'bold', textAlign: 'center'}}>
                 ASN BALANGAN
                 </Text>
                 <Text>
@@ -30,17 +28,15 @@ export default function SurveiCard() {
         </Card>
 
         <Card style={{width: '100%'}}>
-            <Card.Title style={{fontSize: 120}}>
-                <Icon
-                    name='archive-outline'
-                    type='ionicon'
+            <Card.Title>
+                <Icon name='users'
+                    type='font-awesome'
                     color='#FFC996'
-                    size='80'
                     />
             </Card.Title>
             <Card.Divider/>
             {/* <Card.Image source={require('../images/pic2.jpg')}> */}
-                <Text style={{marginBottom: 10, fontSize: 20, fontWeight: 'bold', align: 'center'}}>
+                <Text style={{marginBottom: 10, fontSize: 20, fontWeight: 'bold', textAlign: 'center'}}>
                 NON ASN BALANGAN
                 </Text>
                 <Text>
