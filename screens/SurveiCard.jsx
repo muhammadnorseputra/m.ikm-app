@@ -8,6 +8,7 @@ export default function SurveiCard() {
          <Card style={{width: '100%'}}>
             <Card.Title>
                 <Icon name='users'
+                    size={30}
                     type='font-awesome'
                     color='#517fa4'
                     />
@@ -30,6 +31,7 @@ export default function SurveiCard() {
         <Card style={{width: '100%'}}>
             <Card.Title>
                 <Icon name='users'
+                    size={30}
                     type='font-awesome'
                     color='#FFC996'
                     />

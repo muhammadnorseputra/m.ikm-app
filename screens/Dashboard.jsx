@@ -136,13 +136,13 @@ return (
          load={isLoading} 
          title="Jumlah Layanan" 
          bgColor="#fff" 
-         iconBox={<Icon name='industry' type='font-awesome' color='#2F5D62'/>} 
+         iconBox={<Icon size={30} name='industry' type='font-awesome' color='#2F5D62'/>} 
          value={arr.jml_layanan} />
          <CardBox
          load={isLoading} 
          title="Jumlah Indikator" 
          bgColor="#fff" 
-         iconBox={<Icon name='bookmark' type='font-awesome' color='#D83A56'/>}  
+         iconBox={<Icon size={30} name='bookmark' type='font-awesome' color='#D83A56'/>}  
          value={arr.jml_indikator} />
         </View>
         
